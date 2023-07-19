@@ -33,6 +33,21 @@ namespace SnowFlake
 
             }
         }
+
+        [FunctionName("Function2")]
+        public void Trigger2([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer,
+            ILogger log)
+        {
+            try
+            {
+                CustomerServices.FetchData(log);
+            }
+            catch (Exception ex)
+            {
+                log.LogError(ex, "Error retrieving data from Snowflake.");
+
+            }
+        }
     }
 
 
