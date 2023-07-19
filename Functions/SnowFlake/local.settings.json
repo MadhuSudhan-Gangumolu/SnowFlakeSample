@@ -1,0 +1,10 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SnowFlakeConnection": "account=gxqqwim-xn44768;user=MadhuGangumolu;password=Madhu@1998;warehouse=transforming;database=raw",
+    "Database": "raw",
+    "Schema": "jaffle_shop"
+  }
+}
